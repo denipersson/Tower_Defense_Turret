@@ -54,7 +54,7 @@ public class Tower : MonoBehaviour
     void Start()
     {
         if (!viewDistanceSphere)
-            viewDistanceSphere = GetComponent<SphereCollider>();
+            viewDistanceSphere = GetComponentInChildren<SphereCollider>();
 
         viewDistanceSphere.radius = viewDistance;
 
