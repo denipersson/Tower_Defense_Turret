@@ -13,3 +13,5 @@ The moving part is the one you assign as the "top" part in the inspector.
 You must also make an empty game object as a child of the turret, this game object needs a sphere collider (with the isTrigger checkbox checked). You then assign this as the "view Distance Sphere" in the inspector of the turret, and also add the TowerViewSphere.cs script. (this is what the turret uses to aim at and shoot enemies marked with the tag "enemy").
 
 You now have a working turret!
+
+Feel free to use for any purpose as long as you give me credit!
