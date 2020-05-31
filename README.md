@@ -5,7 +5,7 @@ FOR UNITY
 
 HOW TO USE:
 
-Add this script to your turret game object.
+Add the Tower.cs script to your turret game object.
 
 The tower mesh needs to be divided in two parts: the stationary part and the moving part.
 The moving part is the one you assign as the "top" part in the inspector.
