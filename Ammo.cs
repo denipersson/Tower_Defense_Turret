@@ -42,8 +42,9 @@ public class Ammo : MonoBehaviour
     {
         if (other.transform.tag.Equals("enemy", System.StringComparison.CurrentCultureIgnoreCase))
         {
-            if (other.transform.GetComponent<EnemyInfo>())
-                HitEnemy(other.transform.GetComponent<EnemyInfo>());
+            ///insert what happens to the enemy when hit HERE
+            //example:
+            //enemy.GetComponent<HealthManager>().DealDamage(damage);
 
             if (!canHitMultiple || damage <= 0)
                 Destroy(this.gameObject);
@@ -52,9 +53,5 @@ public class Ammo : MonoBehaviour
                 damage -= (int)(startDamage / 5);
             }
         }
-    }
-    public virtual void HitEnemy(EnemyInfo enemy)
-    {
-        enemy.Health().DealDamage(damage);
     }
 }
