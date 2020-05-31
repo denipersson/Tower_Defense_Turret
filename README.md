@@ -16,7 +16,7 @@ You then assign this as the "view Distance Sphere" in the inspector of the turre
 
 After that you can assign the projectile(ammo) prefabs in the inspector. These prefabs need the Ammo.cs script. The Ammo.cs script needs to be modified down by the OnHitTriggerEnter method, if you want the projectiles to be able to deal damage.
 
-Lastly, assign the ammo origin point (the transform from which the ammo that the turret uses emerges), this can be an empty game object.
+Lastly, assign the ammo origin point (the transform from which the ammo that the turret uses emerges), this can be an empty game object, but it has to be a child of the top part of the mesh in order to function correctly.
 
 You now have a working turret!
 
