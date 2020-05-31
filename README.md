@@ -14,6 +14,10 @@ You must also make an empty game object as a child of the turret, this game obje
 
 You then assign this as the "view Distance Sphere" in the inspector of the turret (in the Tower.cs script). 
 
+After that you can assign the projectile(ammo) prefabs in the inspector. These prefabs need the Ammo.cs script.
+
+Lastly, assign the ammo origin point (the transform from which the ammo that the turret uses emerges), this can be an empty game object.
+
 You now have a working turret!
 
 Feel free to use for any purpose as long as you give me credit!
