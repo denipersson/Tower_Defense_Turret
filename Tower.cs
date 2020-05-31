@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -70,9 +70,9 @@ public class Tower : MonoBehaviour
     }
     void AssignTarget()
     {
-        Clear();
         if (!target)
         {
+            Clear();
             if (enemiesInRange.Count > 0)
             {
                 target = enemiesInRange[0];
@@ -145,30 +145,5 @@ public class Tower : MonoBehaviour
     {
         turretTopPart.transform.rotation = Quaternion.Slerp(turretTopPart.transform.rotation, lookRotation, turnSpeed * Time.deltaTime);
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag.Equals("enemy", System.StringComparison.CurrentCultureIgnoreCase))
-        {
-            if (other.GetComponent<EnemyInfo>())
-                enemiesInRange.Add(other.GetComponent<EnemyInfo>());
-        }
-        if(other.tag.Equals("removable", System.StringComparison.CurrentCultureIgnoreCase))
-        {
-            if(Vector3.Distance(transform.position, other.transform.position) <= environmentalDestructionRadius)
-            {
-                Destroy(other.gameObject);
-            }
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag.Equals("enemy", System.StringComparison.CurrentCultureIgnoreCase))
-        {
-            if (other.GetComponent<EnemyInfo>())
-                enemiesInRange.Remove(other.GetComponent<EnemyInfo>());
-        }
-    }
-
 
 }
