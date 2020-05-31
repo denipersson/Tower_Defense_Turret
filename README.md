@@ -14,7 +14,7 @@ You must also make an empty game object as a child of the turret, this game obje
 
 You then assign this as the "view Distance Sphere" in the inspector of the turret (in the Tower.cs script). 
 
-After that you can assign the projectile(ammo) prefabs in the inspector. These prefabs need the Ammo.cs script.
+After that you can assign the projectile(ammo) prefabs in the inspector. These prefabs need the Ammo.cs script. The Ammo.cs script needs to be modified down by the OnHitTriggerEnter method, if you want the projectiles to be able to deal damage.
 
 Lastly, assign the ammo origin point (the transform from which the ammo that the turret uses emerges), this can be an empty game object.
 
