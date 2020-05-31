@@ -44,7 +44,7 @@ public class Ammo : MonoBehaviour
         {
             ///insert what happens to the enemy when hit HERE
             //example:
-            //enemy.GetComponent<HealthManager>().DealDamage(damage);
+            //other.GetComponent<HealthManager>().DealDamage(damage);
 
             if (!canHitMultiple || damage <= 0)
                 Destroy(this.gameObject);
