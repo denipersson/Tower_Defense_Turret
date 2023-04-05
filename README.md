@@ -2,7 +2,7 @@
 
 This is the implementation used in the mobile game EverDefense (created by me):
 
-[![EverDefense](https://user-images.githubusercontent.com/39971336/230203330-e6010c60-c614-47ee-954c-df258f00996d.png](https://play.google.com/store/apps/details?id=com.GamieGames.TowerDefense&hl=en&gl=US "EverDefense")
+[EverDefense](https://user-images.githubusercontent.com/39971336/230203330-e6010c60-c614-47ee-954c-df258f00996d.png](https://play.google.com/store/apps/details?id=com.GamieGames.TowerDefense&hl=en&gl=US "EverDefense")
 
 
 https://play.google.com/store/apps/details?id=com.GamieGames.TowerDefense&hl=en&gl=US
